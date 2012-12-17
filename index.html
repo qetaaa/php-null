@@ -5,8 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Php-null by tigefa4u</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+   <link rel="stylesheet" href="http://dl.dropbox.com/u/28899774/php-null/under/css/bootstrap.css" type="text/css" />
+   <link rel="stylesheet" href="http://dl.dropbox.com/u/28899774/php-null/under/css/bootstrap-responsive.css" type="text/css" />
+   <link rel="stylesheet" href="http://dl.dropbox.com/u/28899774/php-null/under/css/template.css" type="text/css" />
+   <script type="text/javascript" src="http://dl.dropbox.com/u/28899774/php-null/under/js/jquery.js"></script>
+   <script type="text/javascript" src="http://dl.dropbox.com/u/28899774/php-null/under/js/cufon-yui.js"></script>
+   <script type="text/javascript" src="http://dl.dropbox.com/u/28899774/php-null/under/js/Bebas_400.font.js"></script>
+   <script type="text/javascript" src="http://dl.dropbox.com/u/28899774/php-null/under/js/countdown.js"></script>
+   <script type="text/javascript" src="http://dl.dropbox.com/u/28899774/php-null/under/js/ch-extra.js"></script>
+   <script type="text/javascript">
+      Cufon.replace('h1, #counter h4'); // Works without a selector engine
+   </script>
+   <script type="text/javascript">
+      $(function(){
+        $('#counter').countdown({
+          image: 'images/digits.png',
+          startTime: '12 09 12 12 00',
+  		 endTime: new Date(2013, 06, 21)
+        });
+      });
+    </script>
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css' />
     <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
@@ -15,38 +34,64 @@
     <![endif]-->
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Php-null</h1>
-        <p>php-null database source</p>
-        <p class="view"><a href="https://github.com/tigefa4u/php-null">View the Project on GitHub <small>tigefa4u/php-null</small></a></p>
-        <ul>
-          <li><a href="https://github.com/tigefa4u/php-null/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/tigefa4u/php-null/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/tigefa4u/php-null">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>php-null</h1>
+   <div class="container">
+      <div class="row-fluid">
+         <div class="span12 padding">
+          <h1><span>PHP-NULL</span> UnderGround</h1>
+         </div>
+      </div>
+<!-- Text -->
+      <div class="row-fluid">
+         <div class="span12 alignCenter">
+            <h2 class="title">We are under construction and almost ready!</h2>
+            <h2 class="title">The site will be open via:</h2>
+         </div>
+      </div>
+<!-- Countdown -->
+      <div class="row-fluid">
+        <div class="span12">
+           <div class="countdown">
+              <div id="counter">
+              </div>
+              <div style="clear: both"></div>
+              <div class="desc">
+                 <div><h4>months</h4></div>
+                 <div><h4>days</h4></div>
+                 <div><h4>hours</h4></div>
+                 <div><h4>minutes</h4></div>
+                 <div><h4>seconds</h4></div>
+              </div>
+           </div>
+              <div class="wrapper">
+                 <div class="shadow"></div>
+              </div>
+        </div>
+      </div>
+      <div class="row-fluid">
+         <div class="wrapper">
+<!-- Subscribe form -->
 
-<p>php-null database source</p>
-      </section>
-    </div>
-    <footer>
-      <p>Project maintained by <a href="https://github.com/tigefa4u">tigefa4u</a></p>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-29791208-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-  </body>
+         <div class="span6">
+<!-- Twitter -->
+           <div id="twitter">
+              <div id="twitter_t"></div>
+              <div id="twitter_m">
+                 <div id="twitter_container">
+                 <ul id="twitter_update_list"><li></li></ul>
+              </div>
+              </div>
+              <div id="twitter_b"></div>
+           </div>
+         </div>
+         </div>
+      </div>
+      <div class="row-fluid">
+         <div class="span12 copyright">
+           <p>Copyright © 2012 PHP-NULL UnderGround  All rights reserved.</p>
+         </div>
+      </div>
+   </div>
+<script src="http:///twitter.com/javascripts/blogger.js" type="text/javascript"></script>
+<script src="https://api.twitter.com/1/statuses/user_timeline/phpnull_org.json?callback=twitterCallback2&amp;count=1" type="text/javascript"></script>
+</body>
 </html>
