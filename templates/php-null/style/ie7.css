@@ -1,0 +1,15 @@
+/* 
+	HTML/CSS coding: SaD (im-sad@yandex.ru)
+
+	IE6 & IE7 hacks
+ */
+ 
+ body {font-size:10px !important;}
+
+#header, .avatar, .menuCategory,.menuLogin, .button input, .buttonReds input, .button , .buttonReds{display:inline;}
+
+.category li,.popupBody, .blockContent, .menu, #content, .newsTitle, .contentOptions, .navigation, .ui-menu .ui-menu-item, .ui-menu .ui-menu-item a, .statistics,.ui-dialog .ui-dialog-content, .newsInfo, .staticContent, .baseform, .news, .static, .button, .topnews li, .ratingBox .rating, .commentContent, .user, .userContact{zoom:1;}
+
+#story {margin-top:-1px;}
+.sec_input {line-height:46px;}
+.userColumn {width:49%;}

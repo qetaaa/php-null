@@ -1,0 +1,1 @@
+<div class="bncont"><li>[full-link]{title}[/full-link]{short-story}</li></div>

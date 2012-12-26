@@ -1,0 +1,34 @@
+/* 
+	HTML/CSS coding: SaD (im-sad@yandex.ru)
+
+	Reset styles
+ */
+ 
+ html, body, div, span, h1, h2, h3, h4, h5, h6, p, pre, a, code, em, img, s, strike, strong, sub, sup, tt, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {background:transparent;font-size:100%;margin:0;padding:0;border:0;outline:0;vertical-align:baseline;}
+
+html {font-size:100.01%;overflow-y:scroll;}
+body {font:62.5% Tahoma, "Geneva CY", sans-serif;line-height:1;text-align:left;background:#d6d6d6;color:#545454;}
+html, body {height:100%;width:100%;}
+
+ol, ul {list-style:none;}
+
+/* links */
+a {color:#c73030;margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none;}
+a:hover {text-decoration:underline;}
+a img {border:0 none;outline:none;}
+
+/* titles */
+h1, h2, h3, h4, h5 {line-height:normal;font-family:Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;}
+h1 {font-size:1.8em;} h2 {font-size:1.7em;} h3 {font-size:1.35em;} h4 {font-size:1.2em;} h5 {font-size:1.1em;}
+
+/* tables */
+table {border-collapse:collapse;border-spacing:0;}
+td, td img {vertical-align:top;} 
+
+/* forms */
+input, textarea, select, button {margin:0;font-size:100%;}
+textarea {font-family:Tahoma, "Geneva CY", sans-serif;}
+input[type="text"], input[type="password"], textarea {padding:0;}
+input[type="checkbox"] {vertical-align:bottom;}
+input[type="radio"] {vertical-align:text-bottom;}
+label, input[type="button"], input[type="submit"], button {cursor:pointer;}

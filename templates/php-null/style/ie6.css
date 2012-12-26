@@ -1,0 +1,52 @@
+/* 
+	HTML/CSS coding: SaD (im-sad@yandex.ru)
+
+	IE6 hacks
+ */
+ 
+.menuCategory li a,.menuLogin li a{display:inline-block;}
+.userPanel {float:left;}
+.sepNews {margin: -7px 0px -7px 12px;}
+.newsInfo {height:20px;}
+.sec_input {height:46px;}
+.ui-autocomplete {width:1px;}
+.ui-helper-clearfix {height:1%;}
+.commentText {height:80px;}
+.lostPassword {display:inline;} .lostPassword li a{margin:-15px;}
+.authorFoto{zoom:1;margin-right:-3px;}
+
+
+#searchSend {
+behavior: expression(
+	onmouseover = function() {this.className += ' hover'},
+	onmouseout = function() {this.className = this.className.replace('hover', '')},
+	style.behavior = null
+        );
+}
+#searchSend.hover {background-position:100% 33% !important;}
+#searchSend.hover input {background-position:0% 33% !important;}
+
+
+.button {
+behavior: expression(
+	onmouseover = function() {this.className += ' hover'},
+	onmouseout = function() {this.className = this.className.replace('hover', '')},
+	style.behavior = null
+        );
+}
+.button.hover{background-position:100% 33% !important;}
+.button.hover input{background-position:0% 33% !important;}
+
+
+
+
+.buttonReds{
+behavior: expression(
+	onmouseover = function() {this.className += ' hover'},
+	onmouseout = function() {this.className = this.className.replace('hover', '')},
+	style.behavior = null
+        );
+}
+.buttonReds.hover {background-position:100% 100% !important;}
+.buttonReds.hover input{background-position:0 100% !important;}
+ 

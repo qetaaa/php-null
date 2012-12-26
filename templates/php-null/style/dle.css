@@ -1,0 +1,156 @@
+/*
+	HTML/CSS coding: SaD (im-sad@yandex.ru)
+
+	Default DataLife Engine styles
+ */
+ 
+ 
+ #loading-layer {display:none;font-size:1.2em;background:#000;padding:10px;text-align:center;color:#fff;border-radius:5px;}
+
+/* Рейтинг */
+.ratingBox .rating, .userAvatar .rating{width:60px;height:17px;font-size:0.8em;background:url("../dleimages/ratingBG.gif") no-repeat;padding:0 5px;margin-right:5px;}
+.unit-rating {width:60px;height:17px;position:relative;background:url("../dleimages/rating.gif") repeat-x;overflow:hidden;}
+.unit-rating li {text-indent:-90000px;float:left;}
+.unit-rating li a {display:block;width:12px;height:17px;text-indent:-9000px;z-index:17;position:absolute;}
+.unit-rating li a:hover {background:url("../dleimages/rating.gif") 0 -17px;z-index:2;left:0;}
+
+.unit-rating a.r1-unit {left:0;}			.unit-rating a.r1-unit:hover {width:12px;}
+.unit-rating a.r2-unit {left:12px;}	.unit-rating a.r2-unit:hover {width:24px;}
+.unit-rating a.r3-unit {left:24px;}	.unit-rating a.r3-unit:hover {width:36px;}
+.unit-rating a.r4-unit {left:36px;}	.unit-rating a.r4-unit:hover {width:48px;}
+.unit-rating a.r5-unit {left:48px;}	.unit-rating a.r5-unit:hover {width:60px;}
+.unit-rating li.current-rating {background:url("../dleimages/rating.gif") 0 -34px;position:absolute;height:17px;display:block;text-indent:-9000px;z-index: 1;}
+
+/* Цитата, скрытый текст, исходный код */
+.scriptcode, .title_quote, .quote, .title_spoiler, .text_spoiler {padding:5px;background:#f9fafa;border:1px solid #D6D6D6;}
+.title_quote, .title_spoiler {background:#f9fafa;}
+
+.title_quote {border-bottom:0;font-weight:bold;}
+.scriptcode {text-align:left;font-family:"Courier New";}
+.title_spoiler {font-weight:bold;} .title_spoiler img{vertical-align:baseline !important;}
+.text_spoiler {border-top:0;text-align:justify;}
+
+/* Календарь */
+.calendar {width:100%;}
+.calendar td, .calendar th {padding:5px 0;vertical-align:middle;text-align:center;}
+.calendar td {font-size:1.1em;}
+.weekday-active-v, .day-active-v, .weekday-active, .day-active {font-weight:bold;}
+.weekday {color:#CD3333;}
+th.workday, th.weekday {background:#eee;}
+.monthselect {font-size:1.15em;}
+.day-current {background:#eee;}
+
+/* Выпадающее меню кнопки "редактировать" */
+#dropmenudiv {border:1px solid #9F9F9F;background:#545454;font-weight:bold;line-height:20px;opacity:0.9;-moz-opacity:0.9;filter:alpha(opacity=90);border-radius:5px;}
+#dropmenudiv a {display:block;text-indent:5px;text-decoration:none;color:#fff;width:100%;border-radius:3px;}
+#dropmenudiv a:hover {color:#fff;background:#DD4A4A;}
+
+/* Массовые действия с комментами */
+.mass_comments_action {text-align:right;margin:1px 0 10px 13px;padding:5px;background:#EAEAEA;overflow:hidden;}
+.selectmass input {float:right;margin-left:6px;}
+
+/* Аттачмент */
+.attachment {font-weight:bold;}
+
+/* BBCodes редактор */
+.editor textarea {background:#fff url("../images/fields.png") repeat-x;border:0 none;resize:vertical;}
+.editor input[type="text"] {padding:2px;background:#fff url("../images/fields.png") repeat-x;border:1px solid #bcc0c2;}
+.editor input[type="checkbox"] {vertical-align:middle;}
+.editor_button {float:left;cursor:pointer;padding-left:0;padding-right:0;}
+.editor_buttoncl {float:left;cursor: pointer;padding-left:1px;padding-right:1px;border-left:1px solid #bbb;border-right:1px solid #bbb;}
+.editbclose {float:right;cursor:pointer;}
+.editor_button select {font-size:11px;}
+
+/* Дополниельные кнопки (pm.tpl, registration.tpl) */
+.bbcodes {background:#fff;border:1px solid #D6D6D6;font-weight:bold;height:24px;padding:4px 9px 4px 9px;margin-bottom:2px !important;border-radius:5px;cursor:pointer;}
+.bbcodes:hover {background:#eee;}
+
+/* AJAX поиск по сайту */
+#searchsuggestions {border:1px solid #aaa;width:293px;margin:1px 0 0 0;background:#545454;opacity:0.9;-moz-opacity:0.9;filter:alpha(opacity=90);}
+#searchsuggestions a {padding:5px;display:block;background:#fff;clear:left;height:75px;text-decoration:none;}
+#searchsuggestions a:hover {background:#eee;color:#fff;}
+#searchsuggestions a span.searchheading {background:#545454;display:block;font-weight:bold;padding:4px;color:#fff;}
+#searchsuggestions a span {color:#545454;}
+#searchsuggestions span.seperator {float:right;margin-right:5px;}
+#searchsuggestions span.seperator a {background:transparent;display:block;height:auto;color:#fff;}
+#searchsuggestions span.notfound {padding:5px;background-color:#fff;display:block;height:auto;color:#545454}
+
+/* Диалоговые и всплывающие окна jQuery UI */
+.ui-dialog {overflow:hidden;padding:0.5em;position:absolute;width:300px;box-shadow:0px 0px 8px rgba(0, 0, 0, 0.3);border-radius:5px;}
+.ui-widget-content {background:#fff 50% bottom repeat-x;border:1px solid #D6D6D6;}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button, .ui-widget {font-size:1.1em;}
+
+.ui-helper-clearfix:after {clear:both;content:".";display:block;height:0;visibility:hidden;}
+	.ui-helper-clearfix {display:inline-block;}
+	.ui-helper-clearfix {display:block;}
+
+.ui-draggable .ui-dialog-titlebar {cursor:move;}
+	.ui-dialog .ui-dialog-titlebar {padding:0.5em 1em 0.3em;position:relative;}
+	.ui-widget-header {background:#D6D6D6;font-weight:bold;}
+		.ui-dialog .ui-dialog-title {float:left;margin:0.1em 16px 0.2em 0;}
+		.ui-dialog .ui-dialog-titlebar-close {height:26px;width:26px;margin:-12px 0 0 0;position:absolute;right:0.3em;top:50%;}
+		.ui-dialog .ui-dialog-titlebar-close span {display:block;height:26px;width:26px;cursor:pointer;}
+		.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus {padding:0;}
+
+.ui-dialog .ui-dialog-content {background:none;border:0;overflow:hidden;padding:1.5em 1em;position:relative;}
+	.popupJS {line-height:1.6em;border:none;margin:0;padding:0;}
+
+.ui-dialog .ui-dialog-buttonpane {background-image:none;border-width:1px 0 0 0;margin:0;padding:0.5em 0.5em 0 0.5em;text-align:left;}
+	.ui-dialog .ui-dialog-buttonpane button {cursor:pointer;float:right;line-height:1.4em;margin:0.5em 0.2em;overflow:visible;padding:.2em .6em .3em .6em;width:auto;}
+	.ui-dialog .ui-resizable-se {bottom:3px;height:14px;right:3px;width:14px;}
+
+.ui-icon {background-repeat:no-repeat;display:block;overflow:hidden;text-indent:99999px;}
+.ui-state-default, .ui-widget-content .ui-state-default {background:#eaeaea;border:1px solid #cfcfcf;color:#868686;font-weight:bold;}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {color:#2e6e9e;text-decoration:none;}
+.ui-state-focus, .ui-widget-content .ui-state-focus {background:#eaeaea;border:1px solid #a7a7a7;color:#4e4e4e;font-weight:bold;}
+.ui-state-hover a, .ui-state-hover a:hover {color:#1d5987;text-decoration:none;}
+.ui-state-active, .ui-widget-content .ui-state-active {background:#d0e5f5 50% 50% repeat-x;border:1px solid #a7a7a7;color:#e17009;font-weight:bold;}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {color:#e17009;text-decoration:none;}
+.ui-widget :active {outline:none;}
+.ui-state-error {}
+.ui-widget-header .ui-icon {background:url("../images/close.png") top left;}
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {background:url("../images/close.png") left bottom;}
+.ui-dialog-buttonset .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus {background:#eaeaea;border:1px solid #a7a7a7;color:#4e4e4e;font-weight:bold;}
+
+.ui-button .ui-button-text {display:block;line-height:1.4em;}
+.ui-button-text-only .ui-button-text {padding:.4em .8em;}
+input.ui-button {padding:.4em 1em;}
+.ui-button-set {margin-right:7px;}
+.ui-button-set .ui-button {margin-left:0;margin-right:-.3em;}
+button.ui-button::-moz-focus-inner {border:0;padding:0;}
+
+/* Эффект увеличения изображений */
+.highslide-wrapper, .highslide-outline {background:white;}
+.highslide-image {border:2px solid white;}
+.highslide-active-anchor {visibility:hidden;} .highslide-active-anchor img {visibility:hidden;}
+.highslide-dimming {background:black;}
+.highslide-html {background:white;}
+.highslide-loading {display:block;color:white;font-size:9px;font-weight:bold;text-decoration:none;padding:3px;border:1px solid white;background:black;}
+a.highslide-full-expand {background:url("../dleimages/fullexpand.gif") no-repeat;display:block;margin:0 10px 10px 0;width: 34px;height:34px;}
+.highslide-display-block {display:block;}
+.highslide-display-none {display:none;}
+.highslide-caption {display:none;padding:5px;background:white;}
+.highslide-controls {width:195px;height:40px;background:url("../../../engine/classes/highslide/graphics/controlbar-black-border.gif") no-repeat 0 -90px;margin-right:15px;margin-bottom:10px;margin-top:10px;}
+.highslide-controls ul {position:relative;left:15px;height:40px;list-style:none;margin:0;padding:0;background:url("../../../engine/classes/highslide/graphics/controlbar-black-border.gif") no-repeat 100% -90px;}
+.highslide-controls li {float:left;padding:5px 0;}
+.highslide-controls a {background:url("../../../engine/classes/highslide/graphics/controlbar-black-border.gif");display:block;float:left;height:30px;width:30px;outline:none;}
+.highslide-controls a.disabled {cursor:default;}
+.highslide-controls a span {display:none;}
+.highslide-controls .highslide-previous a {background-position:0 0;}
+.highslide-controls .highslide-previous a:hover {background-position:0 -30px;}
+.highslide-controls .highslide-previous a.disabled {background-position:0 -60px !important;}
+.highslide-controls .highslide-play a {background-position:-30px 0;}
+.highslide-controls .highslide-play a:hover {background-position:-30px -30px;}
+.highslide-controls .highslide-play a.disabled {background-position:-30px -60px !important;}
+.highslide-controls .highslide-pause a {background-position:-60px 0;}
+.highslide-controls .highslide-pause a:hover {background-position:-60px -30px;}
+.highslide-controls .highslide-next a {background-position:-90px 0;}
+.highslide-controls .highslide-next a:hover {background-position:-90px -30px;}
+.highslide-controls .highslide-next a.disabled {background-position:-90px -60px !important;}
+.highslide-controls .highslide-move a {background-position:-120px 0;}
+.highslide-controls .highslide-move a:hover {background-position:-120px -30px;}
+.highslide-controls .highslide-full-expand a {background-position:-150px 0; }
+.highslide-controls .highslide-full-expand a:hover {background-position:-150px -30px;}
+.highslide-controls .highslide-full-expand a.disabled {background-position:-150px -60px !important;}
+.highslide-controls .highslide-close a {background-position:-180px 0;}
+.highslide-controls .highslide-close a:hover {background-position:-180px -30px;}
