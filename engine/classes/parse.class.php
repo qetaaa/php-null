@@ -11,7 +11,7 @@
 =====================================================
  File: parse.class.php
 -----------------------------------------------------
- Purpose: Класс парсера текста
+ Purpose: пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 =====================================================
 */
 
@@ -41,7 +41,7 @@ class ParseFilter {
 	var $not_allowed_tags = false;
 	var $not_allowed_text = false;
 	var $allowed_domains = array("http://vkontakte.ru/", "http://www.vkontakte.ru/", "http://vk.com/", "http://www.vk.com/", "http://youtube.com/", "http://www.youtube.com/", "http://maps.google.ru/", "http://maps.google.com/", "http://player.vimeo.com/", "http://www.facebook.com/", "http://mover.uz/", "http://v.kiwi.kz/", "http://www.dailymotion.com/", "http://www.bing.com/", "http://www.ustream.tv/", "http://w.soundcloud.com/", "http://www.coveritlive.com/", "http://video.yandex.ru/", "http://player.rutv.ru/");
-	var $tagBlacklist = array ('applet', 'body', 'bgsound', 'base', 'basefont', 'frame', 'frameset', 'head', 'html', 'id', 'ilayer', 'layer', 'link', 'meta', 'name', 'script', 'style', 'title', 'xml' );
+	var $tagBlacklist = array('applet', 'body', 'bgsound', 'base', 'basefont', 'frameset', 'head', 'html', 'id', 'ilayer', 'layer', 'link', 'meta', 'name', 'script', 'style', 'title', 'xml');
 	var $attrBlacklist = array ('action', 'background', 'codebase', 'dynsrc', 'lowsrc' );
 	
 	var $font_sizes = array (1 => '8', 2 => '10', 3 => '12', 4 => '14', 5 => '18', 6 => '24', 7 => '36' );
@@ -82,7 +82,7 @@ class ParseFilter {
 			$source = preg_replace_callback( "#<iframe(.+?)src=['\"](.+?)['\"](.*?)></iframe>#i", array( &$this, 'check_frame'), $source );
 		}
 
-		$source = preg_replace( "#<iframe#i", "&lt;iframe", $source );
+		
 		$source = preg_replace( "#</iframe>#i", "&lt;/iframe&gt;", $source );
 		$source = str_replace( "<?", "&lt;?", $source );
 		$source = str_replace( "?>", "?&gt;", $source );
